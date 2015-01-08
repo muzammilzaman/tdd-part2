@@ -8,12 +8,12 @@ public class TestCase implements Test{
 	public TestCase(String methodName){
 		this.methodName = methodName;
 	}
-	
+
+
 	public void setUp(){
 	}
-	
+
 	public void run(TestResult result) throws Exception{
-		//result = new TestResult();
 		result.testStarted();
 		this.setUp();
 		try {

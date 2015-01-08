@@ -9,6 +9,7 @@ public class WasRun extends TestCase{
 	public boolean wasSetUp;
 	public String log;
 
+	
 	public WasRun(String methodName) {
 		super(methodName);
 		this.wasRun = false;
@@ -16,6 +17,7 @@ public class WasRun extends TestCase{
 	}
 
 	public void setUp(){
+	
 		this.wasRun = false;
 		this.wasSetUp = true;
 		this.log = "setUp ";
