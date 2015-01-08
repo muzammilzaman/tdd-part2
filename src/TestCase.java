@@ -5,6 +5,7 @@ public class TestCase implements Test{
 	private String methodName;
 	private TestResult result;
 
+	
 	public TestCase(String methodName){
 		this.methodName = methodName;
 	}
@@ -16,6 +17,7 @@ public class TestCase implements Test{
 	public void run(TestResult result) throws Exception{
 		result.testStarted();
 		this.setUp();
+		
 		try {
 			Method method = this.getClass().getMethod(this.methodName, null);
 			method.invoke(this);
